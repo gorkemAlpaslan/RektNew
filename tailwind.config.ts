@@ -12,6 +12,13 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        helvetica: ['"Helvetica Neue"', "sans-serif"],
+        plexMono: ["var(--font-plex-mono)", "monospace"], // IBM Plex Mono
+      },
+      letterSpacing: {
+        "-5": "-0.05em", // -5% letter spacing
+      },
     },
   },
   plugins: [],
