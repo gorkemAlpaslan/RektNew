@@ -11,15 +11,15 @@ export default function Home() {
   ];
   return (
     <div>
-      <main className="w-full h-screen flex flex-col items-start justify-center ml-12 ">
-        <div className="text-xl flex  flex flex-col gap-10">
-          <div className="flex gap-3">
-            <div className="text-8xl font-bold font-helvetica">
+      <main className="w-full h-screen flex flex-col items-start justify-center ml-12 overflow-hidden">
+        <div className="flex  flex flex-col gap-10">
+          <div className="flex gap-3 text-4xl xl:text-8xl ">
+            <div className="font-bold font-helvetica text-center">
               Coming Soon
             </div>
-            <div className="w-[4.875em] h-[4.875em] rounded-lg bg-[#E35B2A]"></div>
+            <div className="w-[1em] h-[1em] rounded-lg bg-[#E35B2A]"></div>
           </div>
-          <div className="text-xl text-white flex flex-col gap-7 font-helvetica font-normal w-[70%]">
+          <div className="text-sm xl:text-xl text-white flex flex-col gap-7 font-helvetica font-normal w-[70%]">
             <div>
               We&apos;re crafting something extraordinary!
             </div>
@@ -31,7 +31,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="mt-[15em] mb-[5em] flex justify-between items-center bg-transparent gap-28 font-plexMono " >
+        <div className="mt-[4em] xl:mt-[15em] flex justify-between items-start xl:items-center bg-transparent  flex-col xl:flex-row gap-14  xl:gap-28 font-plexMono mb-[6em]" >
           {clocks.map((clock, index) => (
             <ClockCard
               key={index}
