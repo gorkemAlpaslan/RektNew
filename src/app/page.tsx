@@ -42,6 +42,17 @@ export default function Home() {
           ))}
         </div>
         <RektLogo />
+        <footer className="mt-6 font-plexMono text-xs text-white/60">
+          Crafted by{" "}
+          <a
+            href="https://www.gorkemalpaslan.com.tr"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white/80 hover:text-[#E35B2A] transition-colors underline underline-offset-4"
+          >
+            Gorkem Alpaslan
+          </a>
+        </footer>
       </main>
     </div>
   );
